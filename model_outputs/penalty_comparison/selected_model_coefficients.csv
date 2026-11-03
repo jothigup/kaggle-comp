@@ -1,0 +1,118 @@
+encoded_feature,coefficient,absolute_coefficient,is_zero
+categorical__billing.city_san carlos,-4.573864285921563,4.573864285921563,False
+categorical__billing.city_atherton,4.239101983255399,4.239101983255399,False
+categorical__billing.city_dublin,4.176345244922784,4.176345244922784,False
+categorical__latest_package_Quartet,-3.0616807169427243,3.0616807169427243,False
+categorical__billing.city_albany,2.9933247697086722,2.9933247697086722,False
+categorical__billing.city_kensington,2.730385297705211,2.730385297705211,False
+categorical__billing.city_sebastopol,2.5630269593956,2.5630269593956,False
+categorical__latest_location_Contra Costa,-2.3299351742821335,2.3299351742821335,False
+categorical__billing.city_burlingame,-2.170655097918028,2.170655097918028,False
+categorical__billing.city_fremont,2.1557051010142527,2.1557051010142527,False
+numeric__seasons_since_last_subscription,-2.1446360015970303,2.1446360015970303,False
+categorical__billing.city_mill valley,1.995863460134602,1.995863460134602,False
+categorical__billing.city_san mateo,1.9882657325317856,1.9882657325317856,False
+categorical__billing.city_san leandro,1.8459704730846047,1.8459704730846047,False
+categorical__billing.city_cupertino,1.7830346395532932,1.7830346395532932,False
+categorical__billing.city_san jose,1.670366288957045,1.670366288957045,False
+categorical__billing.city_san rafael,1.6058117798558589,1.6058117798558589,False
+categorical__billing.city_san ramon,1.5686102881796837,1.5686102881796837,False
+categorical__billing.city_san bruno,-1.556000312298383,1.556000312298383,False
+categorical__billing.city_piedmont,-1.3327952809798431,1.3327952809798431,False
+categorical__billing.city_stanford,1.3225795044389441,1.3225795044389441,False
+categorical__billing.city_walnut creek,1.318397778743064,1.318397778743064,False
+categorical__billing.city_berkeley,1.0426403090503515,1.0426403090503515,False
+numeric__total_subscribed_seasons,1.0175339469772353,1.0175339469772353,False
+categorical__billing.city_portola valley,-1.0097351805991055,1.0097351805991055,False
+categorical__billing.city_lafayette,0.9873670663809129,0.9873670663809129,False
+categorical__billing.city_san francisco,0.9778250673207423,0.9778250673207423,False
+categorical__billing.city_oakland,0.95926596683856,0.95926596683856,False
+categorical__billing.city_emeryville,-0.9202433959543045,0.9202433959543045,False
+categorical__billing.city_redwood city,0.8892250548090621,0.8892250548090621,False
+categorical__latest_package_Trio B,-0.8030704824427911,0.8030704824427911,False
+numeric__has_subscription_history,-0.7859000325364203,0.7859000325364203,False
+categorical__latest_location_San Francisco,-0.7510249470225867,0.7510249470225867,False
+numeric__donor_tenure_years,-0.6982196415136867,0.6982196415136867,False
+numeric__missingindicator_latest_subscription_seats,0.6845554603119454,0.6845554603119454,False
+numeric__longest_subscription_streak,-0.6401508811689741,0.6401508811689741,False
+categorical__latest_package_Trio A,-0.6321006158244056,0.6321006158244056,False
+numeric__subscribed_2013_14,0.626365188966739,0.626365188966739,False
+numeric__missingindicator_seasons_since_last_subscription,0.6053291344280971,0.6053291344280971,False
+categorical__latest_price_level_3,0.5803642852618776,0.5803642852618776,False
+categorical__billing.city_palo alto,0.5545354484630353,0.5545354484630353,False
+categorical__latest_price_level_2,0.49105241379547626,0.49105241379547626,False
+numeric__amount.donated.lifetime,-0.47758410908831916,0.47758410908831916,False
+categorical__billing.city_tiburon,0.4517799383576658,0.4517799383576658,False
+categorical__billing.city_el cerrito,0.4022124942748031,0.4022124942748031,False
+categorical__latest_package_infrequent_sklearn,0.3825045208432178,0.3825045208432178,False
+categorical__billing.city_sunnyvale,0.3654924612829918,0.3654924612829918,False
+categorical__billing.city_orinda,0.3627104275586108,0.3627104275586108,False
+categorical__billing.city_los altos,0.31843733158940885,0.31843733158940885,False
+numeric__amount.donated.2013,0.3177473456091786,0.3177473456091786,False
+numeric__no.donations.lifetime,0.30473951235041213,0.30473951235041213,False
+numeric__recent_subscription_streak,0.27649710066165545,0.27649710066165545,False
+categorical__billing.city_menlo park,0.24617046041873655,0.24617046041873655,False
+numeric__latest_subscription_seats,0.22030022481623138,0.22030022481623138,False
+numeric__donated_in_2013,-0.19211484975638612,0.19211484975638612,False
+categorical__latest_location_Peninsula,0.18402121853382014,0.18402121853382014,False
+categorical__billing.city_castro valley,-0.17458430848182588,0.17458430848182588,False
+categorical__latest_location_Berkeley Sunday,0.16544282324724635,0.16544282324724635,False
+categorical__billing.city_infrequent_sklearn,-0.15561331679816245,0.15561331679816245,False
+categorical__billing.city_richmond,-0.1541809144843881,0.1541809144843881,False
+numeric__subscribed_2012_13,0.10235052861584125,0.10235052861584125,False
+categorical__latest_price_level_4,-0.05661777096118187,0.05661777096118187,False
+categorical__billing.city_concord,0.04991315480120017,0.04991315480120017,False
+numeric__average_donation,-0.0493262098830145,0.0493262098830145,False
+categorical__billing.city_mountain view,-0.0487252838386986,0.0487252838386986,False
+categorical__billing.city_alameda,-0.03528881719398122,0.03528881719398122,False
+numeric__subscribed_2011_12,0.024784180897595133,0.024784180897595133,False
+numeric__missingindicator_average_donation,-0.017418366552907284,0.017418366552907284,False
+numeric__has_donated,0.00846134290745432,0.00846134290745432,False
+numeric__missingindicator_donor_tenure_years,-0.00016774919729472336,0.00016774919729472336,False
+categorical__billing.city_sausalito,0.0,0.0,True
+categorical__billing.city_seattle,0.0,0.0,True
+categorical__latest_package___missing__,0.0,0.0,True
+categorical__latest_package_Trio,0.0,0.0,True
+categorical__latest_price_level_1,0.0,0.0,True
+categorical__latest_location_infrequent_sklearn,0.0,0.0,True
+categorical__billing.city_vallejo,0.0,0.0,True
+categorical__latest_location___missing__,0.0,0.0,True
+categorical__latest_location_Santa Rosa,0.0,0.0,True
+categorical__billing.city_woodside,0.0,0.0,True
+categorical__latest_location_Orange County,0.0,0.0,True
+categorical__billing.city_santa rosa,0.0,0.0,True
+categorical__latest_package_Quartet CC,0.0,0.0,True
+categorical__billing.city_saratoga,0.0,0.0,True
+categorical__billing.city_new york,0.0,0.0,True
+categorical__billing.city_santa cruz,0.0,0.0,True
+categorical__billing.city_santa clara,0.0,0.0,True
+categorical__billing.city_alamo,0.0,0.0,True
+categorical__billing.city_belmont,0.0,0.0,True
+categorical__billing.city_benicia,0.0,0.0,True
+categorical__billing.city_corte madera,0.0,0.0,True
+categorical__billing.city_daly city,0.0,0.0,True
+categorical__billing.city_danville,0.0,0.0,True
+categorical__billing.city_davis,0.0,0.0,True
+categorical__billing.city_fairfax,0.0,0.0,True
+categorical__billing.city_hayward,0.0,0.0,True
+categorical__billing.city_huntington beach,0.0,0.0,True
+categorical__billing.city_irvine,0.0,0.0,True
+categorical__billing.city_kentfield,0.0,0.0,True
+categorical__billing.city_larkspur,0.0,0.0,True
+categorical__billing.city_livermore,0.0,0.0,True
+categorical__billing.city_los angeles,0.0,0.0,True
+categorical__billing.city_los gatos,0.0,0.0,True
+categorical__billing.city_martinez,0.0,0.0,True
+categorical__billing.city_millbrae,0.0,0.0,True
+categorical__billing.city_moraga,0.0,0.0,True
+categorical__billing.city_napa,0.0,0.0,True
+categorical__billing.city_newport beach,0.0,0.0,True
+categorical__billing.city_novato,0.0,0.0,True
+categorical__billing.city_pacifica,0.0,0.0,True
+categorical__billing.city_petaluma,0.0,0.0,True
+categorical__billing.city_pleasant hill,0.0,0.0,True
+categorical__billing.city_pleasanton,0.0,0.0,True
+categorical__billing.city_portland,0.0,0.0,True
+categorical__billing.city_sacramento,0.0,0.0,True
+categorical__billing.city_san anselmo,0.0,0.0,True
+categorical__latest_price_level___missing__,0.0,0.0,True

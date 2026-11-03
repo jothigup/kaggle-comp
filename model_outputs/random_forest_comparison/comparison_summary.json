@@ -1,0 +1,21 @@
+{
+  "cv_winner": "L2",
+  "forest_minus_l2_validation_auroc": 0.015838658695801477,
+  "training_rows": 5552,
+  "validation_rows": 1389,
+  "test_rows": 2975,
+  "random_state": 42,
+  "cv_folds": 5,
+  "sklearn_version": "1.7.2",
+  "best_parameters": {
+    "L2": {
+      "model__C": 10
+    },
+    "Random forest": {
+      "model__class_weight": "balanced_subsample",
+      "model__max_depth": 10,
+      "model__min_samples_leaf": 2
+    }
+  },
+  "note": "Validation is a reused development holdout; small differences do not establish superiority."
+}

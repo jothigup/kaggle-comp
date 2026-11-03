@@ -1,0 +1,16 @@
+{
+  "selected_penalty": "L1",
+  "selected_C": 10.0,
+  "selection_metric": "roc_auc",
+  "best_cv_score": 0.9702432158224019,
+  "unpenalized_cv_score": 0.9629378949112665,
+  "selected_beats_baseline_in_cv": true,
+  "training_rows": 5552,
+  "validation_rows": 1389,
+  "test_rows": 2975,
+  "zero_encoded_coefficients": 47,
+  "total_encoded_coefficients": 117,
+  "random_state": 42,
+  "sklearn_version": "1.7.2",
+  "note": "Winner chosen by training CV only. Holdout already used during development; score gaps are not proof of superiority."
+}

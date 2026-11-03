@@ -1,0 +1,34 @@
+column,value,count
+price.level,4,1042
+price.level,3,563
+price.level,2,489
+price.level,1,435
+price.level,nan,208
+price.level,0,35
+price.level,Adult,14
+price.level,Youth,14
+price.level,GA,6
+price.level,4.0,2
+marketing.source,nan,2224
+marketing.source,Philharmonia website,158
+marketing.source,Other,96
+marketing.source,Postcard or brochure,95
+marketing.source,Word of mouth,85
+marketing.source,KDFC Radio,39
+marketing.source,City Box Office special offer email,14
+marketing.source,San Francisco Chronicle,13
+marketing.source,Other print,13
+marketing.source,News story or review,12
+season,2012-2013,1001
+season,2011-2012,782
+season,2013-2014,735
+season,2010-2011,290
+location,San Francisco,950
+location,Berkeley Saturday,771
+location,Berkeley Sunday,591
+location,Peninsula,388
+location,Family concert,63
+location,nan,44
+location,Contra Costa,1
+multiple.tickets,no,2692
+multiple.tickets,yes,116

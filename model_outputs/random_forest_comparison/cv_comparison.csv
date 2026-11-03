@@ -1,0 +1,3 @@
+model,cv_auroc,cv_auroc_std,training_auroc,cv_average_precision,cv_log_loss,best_parameters
+L2,0.9699670047767655,0.017412805151563498,0.9872676192024722,0.8404107848884242,0.05681947398842687,"{""model__C"": 10}"
+Random forest,0.9685578017539189,0.00976876211018047,0.9922657426957688,0.8457306081363931,0.10152759472163801,"{""model__class_weight"": ""balanced_subsample"", ""model__max_depth"": 10, ""model__min_samples_leaf"": 2}"

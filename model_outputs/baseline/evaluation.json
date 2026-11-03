@@ -1,0 +1,64 @@
+{
+  "metrics": {
+    "model": {
+      "roc_auc": 0.9230914588057445,
+      "average_precision": 0.7280678847902192,
+      "log_loss": 0.10321425303926515,
+      "brier_score": 0.020305070126282528,
+      "accuracy": 0.9776817854571634,
+      "precision": 0.8431372549019608,
+      "recall": 0.6515151515151515,
+      "f1": 0.7350427350427351,
+      "threshold": 0.5
+    },
+    "constant_probability_baseline": {
+      "roc_auc": 0.5,
+      "average_precision": 0.047516198704103674,
+      "log_loss": 0.19113756749846594,
+      "brier_score": 0.04525856516675785,
+      "accuracy": 0.9524838012958964,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "threshold": 0.5
+    }
+  },
+  "training_rows": 5552,
+  "validation_rows": 1389,
+  "kaggle_test_rows": 2975,
+  "cv_folds": 5,
+  "random_state": 42,
+  "sklearn_version": "1.7.2",
+  "regularization": "none",
+  "numeric_features": [
+    "amount.donated.2013",
+    "amount.donated.lifetime",
+    "no.donations.lifetime",
+    "has_donated",
+    "donated_in_2013",
+    "average_donation",
+    "donor_tenure_years",
+    "has_subscription_history",
+    "total_subscribed_seasons",
+    "seasons_since_last_subscription",
+    "recent_subscription_streak",
+    "longest_subscription_streak",
+    "latest_subscription_seats",
+    "subscribed_2011_12",
+    "subscribed_2012_13",
+    "subscribed_2013_14"
+  ],
+  "categorical_features": [
+    "billing.city",
+    "latest_package",
+    "latest_location",
+    "latest_price_level"
+  ],
+  "notes": [
+    "Average precision is reported for class imbalance; verify the Kaggle scoring metric.",
+    "Correlated/redundant features can make unpenalized coefficients unstable.",
+    "A confusion matrix cannot determine whether L1 or L2 is needed.",
+    "Unknown categories are encoded as all zeros; rare training categories are grouped.",
+    "Donor-tenure reference year and snapshot timing must be checked before modeling."
+  ]
+}

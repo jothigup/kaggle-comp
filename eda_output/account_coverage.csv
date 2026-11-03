@@ -1,0 +1,7 @@
+split,table,unique_split_ids,matched_ids,unmatched_ids
+train,account,6941,6941,0
+train,subscriptions,6941,2205,4736
+train,tickets_all,6941,727,6214
+test,account,2975,2975,0
+test,subscriptions,2975,943,2032
+test,tickets_all,2975,292,2683

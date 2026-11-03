@@ -1,0 +1,58 @@
+PRELIMINARY EDA
+
+TABLE SIZES
+            table  rows  columns  duplicate_rows encoding
+          account 19833       10               0   cp1252
+ concerts_2014-15     6        5               0    utf-8
+         concerts   103        6               0    utf-8
+sample_submission  2975        2               0    utf-8
+    subscriptions 28627        9               0    utf-8
+             test  2975        1               0    utf-8
+      tickets_all  2808        8               0    utf-8
+            train  6941        2               0    utf-8
+         zipcodes 42522       12               0    utf-8
+
+TRAINING LABELS
+label
+0    6609
+1     332
+Label 1 prevalence: 4.78%
+Train/test ID overlap: 0
+Sample submission IDs match test IDs in order: True
+
+COLUMNS WITH AT LEAST 30% MISSING
+      table              column  missing  missing_percent
+    account   shipping.zip.code    19569            98.67
+    account       shipping.city    19561            98.63
+    account        relationship    19172            96.67
+tickets_all    marketing.source     2224            79.20
+    account       first.donated    14298            72.09
+   zipcodes          TotalWages    13678            32.17
+   zipcodes     TaxReturnsFiled    13643            32.08
+   zipcodes EstimatedPopulation    13643            32.08
+
+ACCOUNT COVERAGE
+split         table  unique_split_ids  matched_ids  unmatched_ids
+train       account              6941         6941              0
+train subscriptions              6941         2205           4736
+train   tickets_all              6941          727           6214
+ test       account              2975         2975              0
+ test subscriptions              2975          943           2032
+ test   tickets_all              2975          292           2683
+
+Unparseable nonmissing first.donated dates: 0
+Parsed first.donated range: 1985-07-04 00:00:00 to 2014-09-11 00:00:00
+
+INTERPRETATION AND NEXT STEPS
+* label 1 is rare. A classifier predicting only zero has high accuracy; assess precision, recall, PR-AUC, and the competition metric.
+* The meaning of label 1 and the prediction cutoff must be confirmed from competition instructions.
+* account.id connects accounts, training labels, subscriptions, and tickets. test uses ID instead.
+* Keep IDs and ZIP codes as text. ZIP normalization (including ZIP+4 handling) needs checking before geographic joins.
+* Repeated account IDs in subscription/ticket tables can represent legitimate history; aggregate to one row per account before joining to labels.
+* Validate account as unique before merging with validate="many_to_one". Use left joins to retain split accounts without history.
+* Concert set numbers repeat across seasons and venues. Check composite keys before any concert join to avoid multiplying rows.
+* concerts_2014-15 contains a different season and has no location column. Confirm whether this information is allowed for prediction.
+* Do not replace missing categories with zero by default. Review missingness and distinguish unknown from no activity.
+* Confirm the prediction date before deriving donation or purchase features to avoid future-information leakage.
+* Fit preprocessing on training folds only; stratify validation when appropriate and choose a split consistent with the task.
+* Text includes encoding artifacts; the cp1252 fallback loads account.csv but does not guarantee all text is clean.

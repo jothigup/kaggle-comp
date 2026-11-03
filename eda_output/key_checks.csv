@@ -1,0 +1,8 @@
+table,key,missing,unique,duplicate_nonmissing_keys
+account,account.id,0,19833,0
+sample_submission,ID,0,2975,0
+subscriptions,account.id,0,6267,22360
+test,ID,0,2975,0
+tickets_all,account.id,0,2049,759
+train,account.id,0,6941,0
+zipcodes,Zipcode,0,42522,0

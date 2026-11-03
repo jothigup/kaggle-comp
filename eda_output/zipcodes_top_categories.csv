@@ -1,0 +1,18 @@
+column,value,count
+ZipCodeType,STANDARD,29971
+ZipCodeType,PO BOX,9465
+ZipCodeType,UNIQUE,2437
+ZipCodeType,MILITARY,649
+State,TX,2655
+State,CA,2653
+State,PA,2213
+State,NY,2208
+State,IL,1588
+State,FL,1490
+State,OH,1447
+State,VA,1241
+State,MO,1171
+State,MI,1170
+LocationType,PRIMARY,42522
+Decommisioned,False,41859
+Decommisioned,True,663

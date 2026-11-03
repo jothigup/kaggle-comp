@@ -1,0 +1,42 @@
+column,value,count
+season,2010-2011,32
+season,2011-2012,28
+season,2012-2013,23
+season,2013-2014,20
+concert.name,Marion Verbruggen & the Italian Baroque Recorder,6
+concert.name,Robert Levin Plays Mozart,5
+concert.name,Richard Egarr: Masters of the English Baroque,5
+concert.name,Music from Imperial Saint Petersburg,4
+concert.name,Pergolesi in Naples,4
+concert.name,Heroic Theseus,4
+concert.name,The Italian Violin,4
+concert.name,A Bach Christmas,4
+concert.name,Beethoven's Fourths,4
+concert.name,Alexander's Feast,4
+who,"Ottavio Dantone, conductorMarion Verbruggen, recorder",6
+who,"Nicholas McGegan, conductorRobert Levin, fortepiano",5
+who,"Richard Egarr, harpsichord and conductor",5
+who,"Steven Fox, conductorAnna Dennis, sopranoTanya Tomkins, cello",4
+who,"Nicholas McGegan, conductorDavid Daniels, countertenorCarolyn Sampson, soprano",4
+who,"Nicholas McGegan, conductorAmanda Forsythe, soprano (Teseo)Dominique Labelle, soprano (Medea)Amy Freston, soprano (Agilea)Cline Ricci, soprano (Clizia)Robin Blaze, countertenor (Arcane)Drew Minter, countertenor (Egeo)",4
+who,"Rachel Podger, violin and leaderElizabeth Blumenstock, violinKatherine Kyme, violinCarla Moore, violin",4
+who,"Masaaki Suzuki, conductorSherezade Panthaki, sopranoClaire Kelm, sopranoFabiana Gonzlez, altoDann Coakwell, tenorDashon Burton, bass-baritonePhilharmonia Chorale Ð Bruce Lamott, director",4
+who,"Nicholas McGegan, conductorEmanuel Ax, fortepianoPhilharmonia Baroque Orchestra",4
+who,"Nicholas McGegan, conductorDominique Labelle, sopranoDann Coakwell, tenorPhilip Cutlip, baritonePhilharmonia Chorale, Bruce Lamott, director",4
+what,"ARCANGELO CORELLI (1653-1713)  Concerto Grosso in F major, Op. 6 No. 2GIOVANNI LORENZO GREGORI (1663-1745) Concerto Grosso in A minor, Op. 2 No. 6FRANCESCO GEMINIANI (1687-1762) Concerto Grosso in D minor, Op. 3 No. 4ANTONIO VIVALDI (1678-1741) Concerto for Alto Recorder in F major, ÒLa tempesta di mare,Ó RV 433INTERMISSIONGIUSEPPE SAMMARTINI (1695-1750 Concerto for Soprano Recorder in F majorALESSANDRO SCARLATTI (1660-1725) Concerto Grosso No. 4 in G minorVIVALDI Concerto for Strings in D minor, RV 128CORELLI Concerto Grosso in D major, Op. 6 No. 4",6
+what,"MOZART: Incidental Music from Thamos, King of Egypt, K. 345MOZART: Concerto for Fortepiano No. 20 in D minor, K. 466LEVIN: Improvisations on themes submitted by the audienceMOZART/LEVIN: Concerto Movement in G major from Nannerl's MusicBook, NMA No. 51 (newly attributed to Mozart, US Premiere)LEVIN: Variations on themes submitted by the audienceMOZART:Symphony No. 41 in C major, K. 551 Jupiter",5
+what,"HANDEL: Symphony from SaulLOCKE: Music from The TempestPURCELL: Suite from The Fairy QueenARNE: Concerto for Harpsichord No. 5 in G minorLAWES: String Fantasy  6HANDEL: Concerto Grosso Op. 3, No. 5 in D minor, HWV 316HANDEL: ÒArrival of the Queen of ShebaÓ from Solomon",5
+what,"BEREZOVSKYSymphony in C majorFACIUSConcerto for Violoncello in D minor, Op. 3FOMINDance of the Blessed Spirits from OrpheusBORTNIANSKYSuite from Le fils rivalSuite from AlcideSinfonia ConcertanteGLINKAThree Arias (arr. Rimsky-Korsakov)",4
+what,HANDELDuet ÒIo tÕabbraccioÓ from RodelindaAria ÒDove seiÓ from RodelindaAria ÒDa tempesteÓ from Giulio CesareDuet ÒCaro / BellaÓ from Giulio CesareDURANTEConcerto Grosso in G MinorPERGOLESIStabat MaterSinfonia from LÕOlimpiade,4
+what,"GEORGE FRIDERIC HANDELTeseo, HWV 9",4
+what,"ANTONIO VIVALDIConcerto for Violin in A major, RV 348from La cetra, Op. 9 No. 2Concerto for Two Violins in A major, RV 519from LÕestro armonico, Op. 3 No. 5ARCANGELO CORELLIConcerto Grosso No. 1 in D major, Op. 6GIOVANNI MOSSIConcerto for Four Violins in G minor, Op. 4 No. 12GIOVANNI BATTISTA PERGOLESIConcerto for Violin in B-flat majorPIETRO LOCATELLIConcerto for Four Violins in F major No. 12, Op. 4",4
+what,"J.S. BACHOrchestral Suite No. 3 in D major, BWV 1068Cantata No. 63 Christen, tzet diesen Tag, BWV 63Magnificat in E-flat major, BWV 243a",4
+what,"BeethovenÕs FourthsBEETHOVEN Piano Concerto No. 4 in G major, Op. 58BEETHOVEN 12 Contredanses for Orchestra, WoO 14BEETHOVEN Symphony No. 4 in B-flat major, Op. 60",4
+what,HANDEL: AlexanderÕs Feast,4
+location,San Francisco,26
+location,Berkeley Saturday,26
+location,Berkeley Sunday,25
+location,Peninsula,20
+location,nan,3
+location,Family concert,2
+location,Contra Costa,1

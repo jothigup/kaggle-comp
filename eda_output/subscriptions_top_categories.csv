@@ -1,0 +1,42 @@
+column,value,count
+season,1998-1999,1943
+season,1996-1997,1871
+season,1994-1995,1842
+season,1997-1998,1788
+season,1995-1996,1774
+season,2000-2001,1704
+season,1993-1994,1624
+season,1999-2000,1607
+season,2001-2002,1457
+season,2003-2004,1217
+package,Full,21004
+package,Quartet,3740
+package,Quartet CC,1385
+package,Trio,1288
+package,Trio B,431
+package,Trio A,364
+package,Quartet B,174
+package,Quartet A,157
+package,CYO,66
+package,Full upgrade,12
+location,San Francisco,6680
+location,Berkeley Sunday,6045
+location,Berkeley Saturday,5670
+location,Peninsula,5488
+location,Contra Costa,3044
+location,Santa Rosa,1107
+location,Orange County,581
+location,Los Angeles,6
+location,nan,6
+section,Orchestra,13247
+section,nan,4543
+section,Balcony Front,2710
+section,Premium Orchestra,2487
+section,Balcony,1993
+section,Dress Circle,1225
+section,Balcony Rear,1004
+section,Orchestra Front,645
+section,Box,435
+section,Orchestra Rear,160
+multiple.subs,no,28554
+multiple.subs,yes,73
