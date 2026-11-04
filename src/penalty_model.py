@@ -12,15 +12,13 @@ holdout already inspected in the baseline, not a new independent final test.
 Kaggle test labels are unavailable; its rows are used only for predictions.
 
 Default selection metric: negative log loss, appropriate for assessing supplied
-probabilities. The actual Kaggle metric has not been confirmed. Override with
---selection-metric roc_auc or average_precision if the competition requires it.
+probabilities. Can override with--selection-metric roc_auc.
 All selection metrics are maximized; higher negative log loss means lower loss.
 
 C is inverse regularization strength: smaller C means stronger regularization.
 L1 encourages exact zero coefficients. L2 shrinks coefficients without generally
 setting them to zero. liblinear is used for BOTH penalty families and penalizes
-the synthetic intercept as well as feature coefficients. Do not interpret this
-as a penalty-only controlled comparison with the lbfgs unpenalized baseline.
+the synthetic intercept as well as feature coefficients. 
 """
 from pathlib import Path
 import argparse
@@ -129,7 +127,7 @@ def probability_metrics(y, probability, threshold):
 
 def run_penalty_comparison(train_features, test_features,
                            output_dir='model_outputs/penalty_comparison',
-                           selection_metric='neg_log_loss', cv_folds=5,
+                           selection_metric='roc_auc', cv_folds=5,
                            validation_size=0.2, threshold=0.5, random_state=42):
     """Select L1/L2 and C by training CV; evaluate winner; refit for Kaggle."""
     from sklearn.model_selection import GridSearchCV
@@ -165,8 +163,8 @@ def run_penalty_comparison(train_features, test_features,
     cv_results['penalty'] = cv_results[f'param_model__{parameter}'].map(
         {1.0: 'L1', 0.0: 'L2'} if parameter == 'l1_ratio' else {'l1': 'L1', 'l2': 'L2'})
     cv_results['C'] = cv_results['param_model__C'].astype(float)
-    cv_results['mean_validation_log_loss'] = -cv_results['mean_test_neg_log_loss']
-    cv_results['mean_training_log_loss'] = -cv_results['mean_train_neg_log_loss']
+    cv_results['mean_validation_neg_log_loss'] = -cv_results['mean_test_neg_log_loss']
+    cv_results['mean_training_neg_log_loss'] = -cv_results['mean_train_neg_log_loss']
     cv_results = cv_results.sort_values(f'rank_test_{selection_metric}')
     family_winners = cv_results.groupby('penalty', sort=False).head(1)
     selected = search.best_estimator_
@@ -209,6 +207,33 @@ def run_penalty_comparison(train_features, test_features,
     val_metrics.to_csv(out / 'validation_metrics.csv', index=False)
     confusion.to_csv(out / 'validation_confusion_matrix.csv')
     coefficients.to_csv(out / 'selected_model_coefficients.csv', index=False)
+
+    import matplotlib.pyplot as plt
+
+    # Show the 20 largest coefficients by absolute magnitude.
+    top_coefficients = (
+        coefficients
+        .nlargest(20, "absolute_coefficient")
+        .sort_values("coefficient")
+    )
+    colors = [
+        "steelblue" if value > 0 else "coral"
+        for value in top_coefficients["coefficient"]
+    ]
+    fig, ax = plt.subplots(figsize=(11, 8))
+    ax.barh(
+        top_coefficients["encoded_feature"],
+        top_coefficients["coefficient"],
+        color=colors,
+    )
+    ax.axvline(0, color="black", linewidth=0.8)
+    ax.set_xlabel("Logistic regression coefficient")
+    ax.set_title(f"Selected {selected_penalty} model: top 20 coefficients")
+
+    fig.tight_layout()
+    fig.savefig(out / "coefficient_bar_graph.png", dpi=200)
+    plt.close(fig)
+
     pd.DataFrame({'account.id': ids.loc[X_val.index], 'label': y_val,
                   'probability': val_prob, 'prediction': (val_prob >= threshold).astype(int)}).to_csv(
                       out / 'validation_predictions.csv', index=False)
@@ -224,6 +249,7 @@ def run_penalty_comparison(train_features, test_features,
     fig.tight_layout()
     fig.savefig(out / 'validation_confusion_matrix.png', dpi=180)
     plt.close(fig)
+
     final_model = clone(selected).fit(X, y)
     submission = pd.DataFrame({'ID': test_ids, 'Predicted': final_model.predict_proba(X_test)[:, 1]})
     submission.to_csv(out / 'submission.csv', index=False)

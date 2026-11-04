@@ -175,8 +175,38 @@ def run_baseline(train_features, test_features, output_dir='model_outputs/baseli
                                'mean_average_precision_drop': importance.importances_mean,
                                'std': importance.importances_std}).sort_values(
                                    'mean_average_precision_drop', ascending=False)
+
+
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
+    
+    import matplotlib.pyplot as plt
+    
+    # Show the 20 largest coefficients by absolute magnitude.
+    top_coefficients = (
+        coefficients
+        .nlargest(20, "absolute_coefficient")
+        .sort_values("coefficient")
+    )
+    colors = [
+        "steelblue" if value > 0 else "coral"
+        for value in top_coefficients["coefficient"]
+    ]
+    fig, ax = plt.subplots(figsize=(11, 8))
+    ax.barh(
+        top_coefficients["encoded_feature"],
+        top_coefficients["coefficient"],
+        color=colors,
+    )
+    ax.axvline(0, color="black", linewidth=0.8)
+    ax.set_xlabel("Logistic regression coefficient")
+    ax.set_title(f"Logistic regression model: top 20 coefficients")
+    
+    fig.tight_layout()
+    fig.savefig(out / "coefficient_bar_graph.png", dpi=200)
+    plt.close(fig)
+
+    
     cv_summary.to_csv(out / 'cross_validation_summary.csv', index=False)
     matrix.to_csv(out / 'validation_confusion_matrix.csv')
     coefficients.to_csv(out / 'validation_model_coefficients.csv', index=False)
@@ -264,7 +294,7 @@ if __name__ == '__main__':
     fig.savefig(output_dir / "correlation_matrix.png", dpi=200)
     correlation.to_csv(output_dir / "correlation_matrix.csv")
 
-    plt.show()
+    plt.close(fig)
 
     test_features = pd.read_csv(folder / 'features_test.csv', dtype=dtypes)
     results = run_baseline(train_features, test_features, 
